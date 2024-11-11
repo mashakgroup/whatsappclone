@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Buddy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-body">
+        <header class="dashboard-header">
+            <div class="header-content">
+                <div class="header-left">
+                    <button class="header-icon" id="sidebar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <span>WhatsApp Buddy</span>
+                </div>
+                <div class="header-right">
+                    <a href="#" class="header-icon"><i class="fas fa-cog"></i></a>
+                    <a href="#" class="header-icon"><i class="fas fa-sign-out-alt"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard">
+            <nav class="sidebar" id="sidebar">
+                <div class="nav-links">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-th"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-comments"></i>
+                        <span>Chat</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Help</span>
+                    </a>
+                </div>
+            </nav>
+
+            <main class="main-content">
+                <div class="left-container">
+                    <div class="search-container">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search or start new chat">
+                            <i class="fas fa-filter"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-list">
+                        <div class="chat-item selected">
+                            <div class="chat-avatar">M</div>
+                            <div class="chat-info">
+                                <div class="chat-name">Mike</div>
+                                <div class="chat-preview">Hello</div>
+                            </div>
+                            <div class="chat-meta">
+                                <div class="chat-time">7:17 AM</div>
+                            </div>
+                        </div>
+                        <!-- More chat items -->
+                    </div>
+                </div>
+
+                <div class="right-container">
+                    <div class="chat-container">
+                        <div class="message message-sent">
+                            Hello
+                            <div class="message-time">03:50 AM</div>
+                        </div>
+                        <div class="message message-received">
+                            Hi there!
+                            <div class="message-time">03:51 AM</div>
+                        </div>
+                        <!-- More messages -->
+                    </div>
+
+                    <div class="message-input">
+                        <form>
+                            <input type="text" placeholder="Type a message">
+                            <button type="submit" class="send-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+  </body>
+</html>
